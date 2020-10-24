@@ -2,37 +2,50 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  color:blue;
+  background: lightblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__form {
+  padding: 10px;
+  position: fixed;
+  bottom: 20px;
+  z-index: 1;
+  width: 100%;
+  background-color: #e9e9eb;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app__fromControl {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.app__icon_button {
+  flex: 0;
+}
+
+.app__input {
+  flex: 1;
+}
+.message-card{
+  padding: 1px;
+  margin: 5px;
+  width: fit-content;
+}
+
+.message-isUser {
+  margin-left: auto;
   color: white;
+  text-align: left !important;
 }
 
-.App-link {
-  color: #61dafb;
+.message-card-guest {
+  background-color: rgb(202, 202, 202) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.message-card-user {
+  background-color: rgb(17, 123, 245) !important;
 }
